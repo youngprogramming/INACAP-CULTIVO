@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/build",
+                "${workspaceFolder}/build/esp-idf",
+                "/Users/paulo/esp/esp-idf",
+                "/Users/paulo/esp/esp-idf/examples/common_components/protocol_examples_common/include",
+                "/Users/paulo/esp/esp-idf/components",
+                "/Users/paulo/esp/esp-idf/components/esp_common/include",
+                "/Users/paulo/esp/esp-idf/components/driver/gpio/include",
+                "/Users/paulo/esp/esp-idf/components/driver/ledc/include/driver",
+                "/Users/paulo/esp/esp-idf/components/driver/ledc/include",
+                "/Users/paulo/esp/esp-idf/components/esp_common/include",
+                "/Users/paulo/esp/esp-idf/components/esp_hw_support/include",
+                "/Users/paulo/esp/esp-idf/components/esp_hw_support/include",
+                "/Users/paulo/esp/esp-idf/components/hal/include",
+                "/Users/paulo/esp/esp-idf/components/soc/esp32/include",
+                "/Users/paulo/esp/esp-idf/components/soc/esp32/include",
+                "/Users/paulo/esp/esp-idf/components/esp_idf_lib_helpers",
+                "/Users/paulo/esp/esp-idf/components/esp_netif/include",
+                "/Users/paulo/esp/esp-idf/components/esp_event/include",
+                "/Users/paulo/esp/esp-idf/components/esp_rom/include",
+                "/Users/paulo/esp/esp-idf/components/esp_wifi/include",
+                "/Users/paulo/esp/esp-idf/components/freertos/FreeRTOS-Kernel-SMP/include",
+                "/Users/paulo/esp/esp-idf/components/freertos/config/include/freertos",
+                "/Users/paulo/esp/esp-idf/components/freertos/config/linux/include",
+                "/Users/paulo/esp/esp-idf/components/freertos/FreeRTOS-Kernel-SMP/portable/linux/include/freertos",
+                "/Users/paulo/esp/esp-idf/components/freertos/esp_additions/include",
+                "/Users/paulo/esp/esp-idf/components/heap/include",
+                "/Users/paulo/esp/esp-idf/components/nvs_flash/include",
+                "/Users/paulo/esp/esp-idf/components/dht",
+                "/Users/paulo/esp/esp-idf/components/esp_http_server/include",
+                "/Users/paulo/esp/esp-idf/components/http_parser",
+                "/Users/paulo/esp/esp-idf/components/esp_adc/deprecated/include",
+                "/Users/paulo/esp/esp-idf/components/esp_partition/include",
+                "/Users/paulo/esp/esp-idf/components/driver/deprecated"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64"
+        }
+    ],
+    "version": 4
+}

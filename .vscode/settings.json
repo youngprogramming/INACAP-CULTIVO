@@ -1,0 +1,21 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "freertos.h": "c",
+        "task.h": "c",
+        "esp_http_server.h": "c",
+        "ledc.h": "c",
+        "gpio.h": "c",
+        "esp_idf_lib_helpers.h": "c",
+        "protocol_examples_common.h": "c",
+        "stdalign.h": "c",
+        "esp_err.h": "c",
+        "esp_netif.h": "c",
+        "esp_netif_types.h": "c",
+        "portable.h": "c",
+        "dht.h": "c",
+        "nvs_flash.h": "c"
+    }
+
+}
+
