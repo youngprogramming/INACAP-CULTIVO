@@ -13,9 +13,9 @@
 #include "esp_http_server.h"      
 #include "esp_adc_cal.h"
 #include "driver/gpio.h"
-#include "driver/adc.h"
 #include <unistd.h>
-
+#include"esp_log.h"
+#include"esp_adc/adc_oneshot.h"
 // UNIR index y mandarlos a la tarjeta como ensamblador
 
 extern const char index_start[] asm("_binary_index_html_start");
@@ -26,7 +26,7 @@ extern const char index_end[] asm("_binary_index_html_end");
 int32_t humedad = 0, temperatura = 0;
 float hum = 0.0, temp = 0.0;
 
-void leerTemperatura(){
+void leerDHT(){
      if (dht_read_float_data(DHT_TYPE_AM2301, GPIO_DHT, &hum, &temp) == ESP_OK)
     {
         humedad = (int32_t)hum;
@@ -39,13 +39,13 @@ void leerTemperatura(){
 
 };
 
-void leerDHT(){
+void leerMQ7(){
     
 }
 
 static esp_err_t api_get_handler(httpd_req_t *req)
 { 
-    leerTemperatura();
+    leerDHT();
     httpd_resp_set_hdr(req, "Content-Type", "application/json");
 
     char res[60];

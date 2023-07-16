@@ -36,7 +36,10 @@
                 "/Users/paulo/esp/esp-idf/components/http_parser",
                 "/Users/paulo/esp/esp-idf/components/esp_adc/deprecated/include",
                 "/Users/paulo/esp/esp-idf/components/esp_partition/include",
-                "/Users/paulo/esp/esp-idf/components/driver/deprecated"
+                "/Users/paulo/esp/esp-idf/components/driver/deprecated",
+                "/Users/paulo/esp/esp-idf/components/log/include",
+                "/Users/paulo/esp/esp-idf/components/esp_adc/include",
+                "/Users/paulo/esp/esp-idf/components/esp_adc/esp32/include"
             ],
             "defines": [],
             "macFrameworkPath": [

@@ -14,7 +14,9 @@
         "esp_netif_types.h": "c",
         "portable.h": "c",
         "dht.h": "c",
-        "nvs_flash.h": "c"
+        "nvs_flash.h": "c",
+        "adc_oneshot.h": "c",
+        "adc_cali_scheme.h": "c"
     }
 
 }
