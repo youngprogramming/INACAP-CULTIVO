@@ -87,6 +87,9 @@
             </div>
             <div class="item">
                 <h3><b>Gas</b></h3>
+                <div id="input-co">
+                    <div id="co">0</div>
+                </div>
             </div>
             <div class="item">
                 <h3><b>Motor</b></h3>
@@ -101,7 +104,7 @@
     <script>
         fetch(`/api`)
             .then(res => res.json())
-            .then(({ humedad, temperatura }) => {
+            .then(({ humedad, temperatura, co }) => {
                
                 //barra de progreso temperatura
                 const viewTem = `${temperatura}`;
@@ -120,6 +123,12 @@
                 document.getElementById("humedad").style.width = `${viewHum}%`;
                 document.getElementById("humedad").textContent =`${viewHum}%`;
 
+                const viewCO = `${co}`;
+                var barraDeProgreso = document.getElementById("input-co");
+                barraDeProgreso.setAttribute("aria-valuenow", viewCO);
+
+                document.getElementById("co").style.width = `${viewCO}ppm`;
+                document.getElementById("co").textContent =`${viewCO}ppm`;
                 //document.getElementById('input-humedad').textContent = viewHum;
             });
 
