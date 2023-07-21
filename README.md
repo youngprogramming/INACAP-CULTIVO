@@ -23,7 +23,7 @@ Automatización de cultivo hidropónico con ESP32
    * Problemas Frecuentes
   
 
-## Intruduccióm a proyecto 
+## Intruducción a proyecto 
 
 ### Proposito 
 
