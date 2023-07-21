@@ -1,22 +1,22 @@
 # INACAP-CULTIVO
-Automatizacion de cultivo hidroponico con esp32
+Automatización de cultivo hidropónico con ESP32
 
-Indice Documentacion 
+Índice Documentación
 
-1. Introduccion a proyecto
-   * Proposito
+1. Introducción al proyecto
+   * Propósito
    * Objetivo
   
-2. Vision general de proyectoo
-   * Componentes electronico
+2. Visión general del proyecto
+   * Componentes electrónicos
    * Tecnologias 
-   * Librerias de codigo
+   * Librerias de código
   
-3. Guia configuracion proyeto
-     * instalacion ESP-IDF WINDOWS
-     * instalcion ESP-IDF LINUX/MAC
-     * Creacion de projectos en ESP-IDF
-     * Ejecutar codigo en ESP32
+3. Guía de configuración del proyecto
+     * Instalación ESP-IDF en WINDOWS
+     * Instalación ESP-IDF en LINUX/MAC
+     * Creación de proyectos en ESP-IDF
+     * Ejecutar código en ESP32
 
 4. Solucion Problemas
    * Problemas de compatibilidad
@@ -27,8 +27,8 @@ Indice Documentacion
 
 ### Proposito 
 
-el propósito general de este proyecto es combinar la tecnología de automatización de ESP32, tecnologia 4.0, ocupando IoT(internet of things)con la técnica 
-de cultivo hidropónico para aumentar la eficiencia, la calidad y el control en la producción de cultivos, 
+El propósito general de este proyecto es combinar la tecnología de automatización de ESP32 (tecnología 4.0), utilizando IoT (Internet de las cosas), con la técnica
+de cultivo hidropónico para aumentar la eficiencia, la calidad y el control en la producción de cultivos,
 al mismo tiempo que se optimizan los recursos utilizados.
 
 ### Objetivo 
@@ -48,7 +48,7 @@ como desequilibrios en los niveles de gas o condiciones de temperatura o  humeda
 para tomar medidas preventivas o correctivas.
 
 * Establecer un sistema de monitoreo en tiempo real: El objetivo es proporcionar información en tiempo real sobre las condiciones del cultivo,
- como la temperatura, la humedad, los niveles de nutrientes y otros parámetros importantes, tanto en la interfaz local como en la remota.
+ como la temperatura, la humedad y otros parámetros importantes, tanto en la interfaz local como en la remota.
 
 ## Visión general del proyecto 
 
@@ -67,7 +67,7 @@ para tomar medidas preventivas o correctivas.
 * ESP-IDF
 * GIT
 
-### Librerias de codigo
+### Librerias 
 
 #### Libreias comunes de C para manejar texto y otros 
 * #include <stdio.h>
@@ -76,7 +76,7 @@ para tomar medidas preventivas o correctivas.
 * #include <stdalign.h>
 * #include <unistd.h>
 
-#### obtiene el conjunto completo de bibliotecas necesarias para crear productos integrados y de IoT conectados y seguros
+#### Obtiene el conjunto completo de bibliotecas necesarias para crear productos integrados y de IoT conectados y seguros
 
 * "freertos/FreeRTOS.h"
 * "freertos/task.h"
@@ -132,7 +132,7 @@ Tenga en cuenta que este acceso directo es específico para el directorio ESP-ID
 2. Alternativamente, ejecute cmd.exe, luego cambie al directorio ESP-IDF que desea usar y ejecute export.bat. Tenga en cuenta que, a diferencia de la opción anterior, esta forma requiere que Python y Git estén presentes en PATH. Si obtiene errores relacionados con Python o Git que no se encuentran, use la primera opción.
 
 
-### instalcion ESP-IDF LINUX/MAC
+### instalación ESP-IDF LINUX/MAC
 
 Para mas detalles
 > https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html
@@ -155,7 +155,7 @@ Siempre ejecutar:
 > $HOME/esp/esp-idf/export.sh
 
 
-### Creacion de projectos en ESP-IDF 
+### Creación de proyectos en ESP-IDF 
 
 
 1. Vamos a donde almacenaremos el proyecto
@@ -168,31 +168,31 @@ en esta carpeta es donde debemos copiar todo los archivos que tenenmos en git
 ### Ejecutar codigo en ESP32
 
 Para configurar tarjeta:
-aqui nos aparecera un menu y es muy importante agregar nombre de red y contraseña 
+aqui nos aparecera un menú y es muy importante agregar el nombre de red y contraseña 
 para que posteriormente la tarjeta pueda conectarse a la wifi 
 
 >idf.py menuconfig
 
-Para pasar a binario todo el proyecto 
+Para pasar a binario el codigo
 >idf.py build 
 
-Para pasar a la tarjeta esp32 el binario
+Para pasar a la tarjeta esp32 el binario:
 >idf.py flash
 
-Para ver que esta pasando
+Para ver que esta pasando: 
 >idf.py monitor 
 
 ## Problemas 
 
-### Problemas de compatibilida
+### Problemas de compatibilidad
 * Descargar drivers en caso de que no reconozca la placa disponibles en Espressif programming guide 
 * Verificar que el cable este buen estado(idealmente ocupar uno nuevo)
   
-### Problemas Frecuentes y su solucion
+### Problemas Frecuentes y su solución
 
 #### No me tomaba el wifi: 
 * Verificar que el router de internet se encuentre los suficientemente cerca para que pueda tomar wifi
-* verifica que tenga la ruta a las librerias necesarias 
+* Verifica que tenga la ruta a las librerias necesarias 
 
 
 
